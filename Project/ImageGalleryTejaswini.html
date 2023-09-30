@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Modified Image Gallery</title> <!-- Changed the title -->
+    <script>
+        document.addEventListener('contextmenu', event => event.preventDefault());
+    </script>
+    <link rel="stylesheet" type="text/css" href="modified-photo-galary.css"> <!-- Changed the CSS file -->
+</head>
+
+<style>
+    .box {
+        max-width: 800px; /* Increased the max-width */
+        margin: auto;
+        background: #3498db; /* Changed the background color */
+        overflow: hidden; /* Changed overflow to hidden */
+    }
+
+    .gallary {
+        margin: 10px; /* Adjusted the margin */
+        border: 2px solid #e74c3c; /* Changed the border color */
+        float: left;
+        width: 370px; /* Adjusted the width */
+    }
+
+    .gallary img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px; /* Added border-radius for rounded corners */
+    }
+
+    .container h1 {
+        text-align: center;
+        font-family: 'Roboto', sans-serif; /* Changed the font family */
+        color: #2ecc71; /* Changed the text color */
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Added text shadow */
+    }
+</style>
+
+<body>
+
+    <div class="container">
+        <h1>Updated Photo Gallery</h1>
+    </div>
+
+    <main>
+
+        <div class="box">
+
+            <div class="gallary">
+                <img src="new-img1.jpg"> <!-- Changed image source -->
+            </div>
+
+            <div class="gallary">
+                <img src="new-img2.jpg"> <!-- Changed image source -->
+            </div>
+
+            <div class="gallary">
+                <img src="new-img3.jpg"> <!-- Changed image source -->
+            </div>
+
+            <div class="gallary">
+                <img src="new-img5.jpg"> <!-- Changed image source -->
+            </div>
+
+            <div class="gallary">
+                <img src="new-img4.jpg"> <!-- Changed image source -->
+            </div>
+
+            <div class="gallary">
+                <img src="new-img6.jpg"> <!-- Changed image source -->
+            </div>
+
+            <div class="gallary">
+                <img src="new-img7.jpg"> <!-- Changed image source -->
+            </div>
+
+            <div class="gallary">
+                <img src="new-img8.jpg"> <!-- Changed image source -->
+            </div>
+
+        </div>
+
+    </main>
+
+</body>
+
+</html>
