@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html><head>
+ <meta charset="UTF-8">
+ <title>Our Services</title>
+	<script>
+		document.addEventListener('contextmenu',event => event.preventDefault()); 
+	</script>
+<style>
+body{
+	background-color: black;
+}
+.servicebox{
+	padding:135px 25px 15px;
+	background: url('img/service.jpg');
+	display: inline-block;
+	text-align: center;
+	border-radius: 20x;
+	overflow: hidden;
+	position: relative;
+}
+.servicebox .service-icon{
+	display: inline-block;
+	width: 200px;
+	height: 200px;
+	line-height: 300px;
+	border-radius: 50%;
+	box-shadow: 0 0 5px #000 inset;
+	background: linear-gradient(to
+	top,#8633cb,#884fb7 50%,#6d6e72 50%);
+	font-size: 50px;
+	color: white;
+	position: absolute;
+	top: -80px;
+	left: 50%;
+	transform: scale(1) translateX(-50%);
+	transition: all 0.9s ease 0s;
+}
+.servicebox:hover .service_icon{
+	font-sizw:65px;
+}
+.servicebox .title{
+	font-size: 18px;
+	font-weight: 700;
+	color: #ff9c9c;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	margin: 0 0 10px o; 
+}
+.servicebox:hover .title{
+	color:#8939cb; 
+}
+.servicebox .description{
+	border:#aca6c0;
+	border-width:20px; 
+	border-style:outset;
+	padding: 0px 226px;
+    font-size: 20px;
+    color: #ffffff;
+    line-height: 36px;
+    letter-spacing: 4px;
+    margin-bottom: 4px;
+}
+.servicebox .read-more{
+	display: inline-block;
+	padding: 5px 15px;
+	font-size: 14px;
+	font-size: italic;
+	color: white;
+	background: linear-gradient(to
+	top,#8633cb,#884fb7);
+	border-radius: 10px 10px 0 0;
+	transform: translateY(50px);
+	transition: all 0.3s ease 0s;
+}
+.servicebox .read-more:hover{
+	color: white;
+	box-shadow: 0 0 5px #000;
+}
+.servicebox:hover .read-more{
+	transform:translateY(0);
+}
+.servicebox.yellow.serviceicon{
+	background: linear-gradient(totop,#f1b02b,#fddb18 50%,#6d6e7250%);
+}
+.servicebox.yellow:hover .title{
+	color: #f1b02b; 
+}
+.servicebox.yellow.read-more{
+	background:linear-gradient(totop,#f1b02b,#fddb18);
+}
+.servicebox.green.service-icon{
+background: linear-gradient(totop,#50c338,#9dea28 50%,#6d6e7250%);
+}
+.servicebox.green:hover .title{
+	color: #50c338; 
+}
+.servicebox.green.read-more{
+	background: linear-gradient(totop.#50c338,#9dea28); 
+}
+</style>
+</head>
+<body>
+<br>
+<div class="demo">
+<div class="container">
+<div class="row">
+<div class="col-md-3">
+<div class="servicebox green">
+<div class="service-icon">
+</div>
+<h3 class="title">HEALTH CARE</h3>
+<h1 class="description"><strong>fitness information or exercise is
+a key of consideration for maintaining
+health. Along with healthy eating, its one
+of the most important things a person can
+do keep a healthy weight.</strong></h1>
+<a href="page1.html" class="readmore">Read more</a>
+<hr>
+</div>
+</div>
+<div class="col-md-4">
+<div class="servicebox">
+<div class="service-icon">
+</div>
+<h3 class="title">SPECIAL TRAINER</h3>
+<p class="description">Special Trainer avilable in this gym.
+For making fastest fitness or body
+Special trainer is important. Trainer
+can train you about all workouts which is
+given in chart.</p>
+<a href=" page2.html " class="readmore">Read more</a>
+<hr>
+</div>
+</div>
+<div class="col-md-3">
+<div class="servicebox yellow">
+<div class="service-icon">
+</div>
+<h3 class="title">STEAM BATH</h3>
+<p class="description">A steambath is a steam-filled room for the
+purpose of relaxation and cleansing. its
+along history, going back to greek and
+roman times. It is so easy.</p>
+<a href=" page3.html " class="readmore">Read more</a>
+<hr>
+</div>
+</div>
+<div class="col-md-3">
+<div class="servicebox pink">
+<div class="service-icon">
+</div>
+<h3 class="title">ZUMBA DANCE</h3>
+<p class="description">Zumba is a exercise fitness program
+created by colombian dancer in 1990s. A
+zumba class
+combines fast and slow rythms of tune.</p>
+<a href=" page4.html " class="readmore">Read more</a>
+<hr>
+</div>
+</div>
+</div>
+</div>
+</div>
+</body></html>
