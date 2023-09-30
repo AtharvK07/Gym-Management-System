@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>INTENSITY WORLD</title>
+<script>
+        function Redirect()
+        {
+            window.location='LoginPage.html';
+        }
+		document.addEventListener('contextmenu',event => event.preventDefault()); 
+    </script>
+</head>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&display=swap" rel="stylesheet">
+
+<style>
+/* CSS Reset */
+body{
+	font-family: 'Bheem 2', cursive;
+	color: white;
+	margin: 0px;
+	padding: 0px;
+	background: url('img/weight-lifting-.jpg');
+	}
+.left{
+	position: absolute;
+	left: 38px;
+	top: 20px;
+	display: inline-block;
+	/*border: 2px solid red;*/
+}
+.left img{
+	width: 136px;
+	filter: invert(100%);
+}
+.left div{
+	line-height: 1px;
+	font-size: 26px;
+	text-align: center;
+}
+.mid{
+	display: block;
+	width: 41%;
+	margin: 35px auto;
+	/*border: 2px solid green;*/
+}
+.right{
+	position: absolute;
+	right: 34px;
+	top: 43px;
+	display: inline-block;
+	/*border: 2px solid yellow;*/
+}
+.navbar{
+	display: inline-block;
+}
+.navbar li{
+	
+	display: inline-block;
+	font-size: 17px;
+}
+.navbar li a{
+	color: white;
+	text-decoration: none;
+	padding: 34px 10px;
+}	
+.navbar li a:hover, .navbar li a.active{
+	text-decoration: underline;
+	color: gray
+}	
+.btn{
+	font-family: 'Baloo Bhaina 2', cursive; 
+	margin: 0px 9px;
+	color: white;
+	background-color: black;
+	padding: 4px 14px;
+	/*border: 2px solid gray;*/
+	border-radius: 8px;
+	cursor: pointer;
+}
+.btn:hover{
+	background-color: white;
+}
+.container{
+	/*border: 2px solid white;*/
+    margin: 109px 318px;
+    width: 41%;
+    border-radius: 21px;
+    text-align: center;
+    font-family: fantasy;
+}
+.container h4{
+	display: inline-block;
+    text-align: center;
+    font-size: 28px;
+    width: 93%;
+    padding: 18px;
+    margin: -13px;
+}
+.container h1{
+	display: inline-block;
+    text-align: center;
+	font-size: 83px;
+    width: 97%;
+	padding: 7px 0px;
+    margin: 0px 7px;
+   
+}
+.container h2{
+	display: inline-block;
+    text-align: center;
+    padding: 0px 0px;
+    font-size: 19px;
+    width: 118%;
+    margin: -38px;
+}
+.container button{
+	display: block;
+	width: 74%;
+	margin: 20px auto;
+}
+</style>
+<body>
+	<header class="header">
+		
+		<div class="left">
+			<img src="img/dumbbell.png" alt="">
+			<div>
+				Intesity Gym
+			</div>
+		</div>
+		<div class="mid">
+			<ul class="navbar">
+				<li><a href="#" class="active">Home</a></li>
+				<li><a href="images.html">Gallery</a></li>
+				<li><a href="our services.html">Services</a></li>
+				<li><a href="Registration Form.html">Registration Form</a></li>
+				<li><a href="Fee Structure.html">Fee Structure</a></li>
+			</ul>
+		</div>
+		<div class="right">
+			<script src="https://apps.elfsight.com/p/platform.js" defer></script>
+			<div class="elfsight-app-837df9df-9706-41fb-93ef-4ce1578e972b"></div>
+			<a href="mailto:atharvkshirsagar106@gmail.com">
+			<button class="btn">Email Us</button> 
+			</a>
+		</div>
+		
+	</header>
+	<div class="container">
+		<h4>Sweat. Smile. and Repeat.</h4>
+		<h1> FITNESS WORLD </h1>
+		<h2>Sore Today, Strong Tomorrow</h2>
+		<button class="btn" onclick="Redirect()">Login here</button>
+	</div>
+</body>
+</html>
