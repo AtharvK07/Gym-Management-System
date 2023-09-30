@@ -1,0 +1,97 @@
+<html>
+<head>
+	<script>
+		function Display()
+		{
+			
+			var v=document.getElementById("fname").value;
+			var x = document.getElementById("tf2").value;
+			if(!v || !x)
+			{
+				alert("Please Enter Value!!!");
+			}
+			else if(v || x)
+			{
+				alert("Welcome "+v+" to the Intensity Gym!! ");
+			}
+		}
+		function Redirect()
+		{
+			window.location="our services.html";
+		}
+		function myFunction() 
+		{
+			var x = document.getElementById("tf2");
+			if (x.type === "password") 
+			{
+					x.type = "text";
+			} 
+			else 
+			{
+				x.type = "password";
+			}
+		}
+	</script>
+<style>
+.main{
+	background: url('img/fitness.jpg');
+}
+h2{
+    font-size: 36px;
+    text-align: center;
+    width: 615px;
+    margin: 28px -171px;
+    padding: 15px 89px;
+    background-color: #886ce7;
+    color: #040404;
+}
+.form-group input{
+	font-family: monospace;
+    display: -webkit-inline-box;
+    width: 316px;
+    padding: 4px;
+    /* border: 7px solid black; */
+    margin: 10px auto;
+    font-size: 15px;
+    border-radius: 8px;
+}
+.btn{
+	font-family: cursive;
+    margin: 14px 80px;
+    color: white;
+    background-color: black;
+    padding: 8px 61px;
+    /* border: 2px solid gray; */
+    border-radius: 8px;
+    cursor: pointer;
+}
+.btn:hover{
+   background-color: #5aec94;
+  font-weight: bold;
+}
+.mid{
+	display: block;
+    width: 33%;
+    margin: 75px 456px;
+    /* border: 2px solid green;
+}
+</style>
+</head>
+<body class="main">
+	<div class="mid">
+		<h2>Gym Member's Login</h2>
+		<form>
+		<div class="form-group">
+				<input type="text" id="fname" value="" placeholder="Enter your Name">
+		</div>
+		<div class="form-group">
+				<input type="password" value="" id="tf2" placeholder="Enter your Password"><br><br>
+		</div>
+		<div class="chck" style="font-family: -webkit-pictograph;font-size: 14px;margin: -15px 10px;padding: 9px 0px;">
+		Show Password<input type="checkbox" onclick="myFunction()">
+		</div>
+		<button class="btn" onclick="Display();Redirect">Login</button>
+		</form>
+	</div>
+</body>
+</html>
