@@ -1,0 +1,221 @@
+<html>
+<head><title>Registration Form</title>
+	<script>
+		function Display()
+		{
+			
+			var str=document.getElementById("MBphone").value;
+			var sex=document.getElementById("gender").value;
+			var first=document.getElementById("fname").value;
+			var last=document.getElementById("lname").value;
+			var emailid=document.getElementById("ename").value;
+			var pass1=document.getElementById("tf1").value;
+			var pass2=document.getElementById("tf2").value;
+			if(!first || !lname || !emailid || !pass1 || !pass2 || !MBphone || !sex)
+			{
+				alert("Please Fill the Form!!");
+			}
+			else if(str.length!=10)
+			{
+				alert("Invalid Mobile Number,required 10 digits");
+			}
+			else if(pass1!=pass2)
+			{
+				alert("Password does not match");
+			}
+			else {
+				alert("Your data has been submitted Successfully!!");
+				location.replace("LoginPage.html");
+			}
+			
+		}	
+		function myFunction1()
+		{
+			var x = document.getElementById("tf1");
+			if (x.type === "password") 
+			{
+					x.type = "text";
+			} 
+			else 
+			{
+				x.type = "password";
+			}
+		}
+		function myFunction()
+		{
+			var x = document.getElementById("tf2");
+			if (x.type === "password") 
+			{
+					x.type = "text";
+			} 
+			else 
+			{
+				x.type = "password";
+			}
+		}
+		document.addEventListener('contextmenu',event => event.preventDefault()); 
+	</script>
+<link rel="stylesheet" type="text/css">
+</head>
+<style>
+*{
+margin: 0;
+padding: 0;
+}
+h1{
+    text-align: center;
+    padding: 10px;
+}
+h2{
+    text-align: center;
+    padding: 10px;
+}
+.register{
+    background: #273444;
+    width: 500px;
+    margin: 6px 430px;
+    color: white;
+    font-size: 18px;
+    padding: 12px 33px;
+    border-radius: 10px;
+}
+#register{
+    margin-left: 50px;
+}
+label{
+    color: white;
+    font-family: sans-serif;
+    font-size: 18px;
+    font-style: italic;
+}
+#tf2{
+    width: 300px;
+    border: none;
+    border-radius: 3px;
+    outline: 0;
+    padding: 5px 10px;
+}
+#tf1{
+    width: 300px;
+    border: none;
+    border-radius: 3px;
+    outline: 0;
+    padding: 5px 10px;
+}
+#fname{
+    width: 300px;
+    border: none;
+    border-radius: 3px;
+    outline: 0;
+    padding: 5px 10px;
+}
+#lname{
+    width: 300px;
+    border: none;
+    border-radius: 3px;
+    outline: 0;
+    padding: 5px 10px;
+}
+#ename{
+    width: 300px;
+    border: none;
+    border-radius: 3px;
+    outline: 0;
+    padding: 5px 10px;
+}
+#ch1{
+	cursor: pointer;
+}
+#ch2{
+	cursor: pointer;
+}
+#ph{
+    width: 65px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    outline: 0;
+}
+#MBphone{
+    width: 230;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    outline: 0;
+}
+#gender{
+	cursor: pointer;
+}
+#sub{
+	font-family: 'Baloo Bhaina 2', cursive;
+	background-color: grey;
+    width: 200px;
+    padding: 4px 14px;
+	margin: 0px 9px;
+    font-size: 16px;
+    font-family: sans-serif;
+    font-style: oblique;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    outline: 0;
+	cursor: pointer;
+	color: white;	
+}
+.sub:hover{
+	background-color: gray;
+}
+#email{
+    width: 302px;
+    border: none;
+    border-radius: 3px;
+    outline: 0;
+    padding: 5px 10px;
+}
+	</style>
+    <body style="background-image: url(img/sport.jpg);">
+        <h1>Registration Form</h1>
+        <div class="register">
+            <h2>Register Here</h2>
+            <form action="" method="post" id="register">
+                
+                <label>First Name:</label><br>
+                <input type="text" name="Fname" id="fname" placeholder="First name"><br><br>
+				
+                <label>Last Name:</label><br>
+                <input type="text" name="Lname" id="lname" placeholder="Last name"><br><br>
+				
+                <label>Mobile Number:</label><br>
+                <select name="" id="ph">
+                    <option value="">+91</option>
+                    <option value="">+92</option>
+                    <option value="">+93</option>
+                    <option value="">+94</option>
+                    <option value="">+96</option>
+                </select>
+				
+                <input name="mobile" id="MBphone" type="number" placeholder="Mobile Number"> <br><br>
+				
+                <label>Email:</label>  <input type="email" name="email" id="ename" placeholder="Email ID"><br><br>
+				
+                <label>Password:</label>
+				<input type="password" value="" id="tf1" placeholder="Password"><br>
+				<input type="checkbox" id="ch1" onclick="myFunction1()"> Show Password<br><br>
+				
+                <label>Re enter your Password:</label><br>
+                <input type="password" value="" id="tf2" placeholder="Renter Password"><br>
+				<input type="checkbox" id="ch2" onclick="myFunction()"> Show Passwordss<br><br>
+				
+                <label>Please select your gender:</label><br>
+					  <input type="radio" id="gender" value="male">
+					  <label for="male">Maleee</label> &nbsp;&nbsp;
+					  <input type="radio" id="gender" value="female">
+					  <label for="female">Female</label> &nbsp;&nbsp;
+					  <input type="radio" id="gender" value="other">
+					  <label for="other">Other</label><br><br>
+                <input type="button" value="Submit" id="sub" onclick="Display()">
+				
+            </form>
+        </div>
+    </body>
+</html>
