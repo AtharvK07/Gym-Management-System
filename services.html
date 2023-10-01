@@ -1,13 +1,26 @@
 <!DOCTYPE html>
 <html><head>
  <meta charset="UTF-8">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
  <title>Our Services</title>
 	<script>
 		document.addEventListener('contextmenu',event => event.preventDefault()); 
 	</script>
 <style>
-body{
+/* body{
 	background-color: black;
+} */
+
+/* Light Mode Styles */
+body {
+  background-color: #edbdbd;
+  color: #000000;
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+  background-color: #000000;
+  color: #e48787;
 }
 .servicebox{
 	padding:135px 25px 15px;
@@ -106,6 +119,7 @@ background: linear-gradient(totop,#50c338,#9dea28 50%,#6d6e7250%);
 <body>
 <br>
 <div class="demo">
+	<button onclick="document.body.classList.toggle('dark-mode')" ><i class="fa fa-cloud" style="font-size:60px;color:lightblue;text-shadow:2px 2px 4px #000000;"></i></button>
 <div class="container">
 <div class="row">
 <div class="col-md-3">
