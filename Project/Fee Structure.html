@@ -1,34 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Fee Structure</title>
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      background-color: #f5f5f5; /* Background color */
-      font-family: Arial, sans-serif;
-    }
-
-    .box {
-      text-align: center;
-      padding: 50px; /* Add more padding for spacing */
-    }
-
-    .box img {
-      max-width: 100%; /* Make sure the image doesn't exceed its container */
-      box-shadow: 0px 0px 19px rgba(0, 0, 0, 0.3); /* Add a subtle shadow */
-    }
-  </style>
-  <script>
-    document.addEventListener('contextmenu', event => event.preventDefault());
-  </script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Fee Structure</title>
+	<link rel="stylesheet" href="fee-style.css">
+	<script>
+		document.addEventListener('contextmenu', event => event.preventDefault());
+		function Redirect() {
+			window.location = 'LoginPage.html';
+		}
+		function register() {
+			window.location = 'Registration Form.html';
+		}
+	</script>
 </head>
+
 <body>
-  <div class="box">
-    <img src="Fee Structure.png" alt="Fee Structure" width="800" height="480">
-  </div>
+
+	<!-- Navbar HTML -->
+
+	<header class="header">
+
+		<div class="left">
+			<img src="img/dumbbell.png" alt="">
+			<div>
+				Intesity Gym
+			</div>
+		</div>
+		<div class="mid">
+			<ul class="navbar">
+				<li><a href="home.html" >Home</a></li>
+				<li><a href="./Gallery/Gallery.html">Gallery</a></li>
+				<li><a href="./Services/our services.html">Services</a></li>
+				<li><a href="Registration Form.html">Registration Form</a></li>
+				<li><a href="#" class="active">Fee Structure</a></li>
+			</ul>
+		</div>
+		<div class="right">
+			<script src="https://apps.elfsight.com/p/platform.js" defer></script>
+			<button class="btn" onclick="Redirect()">Login here</button>
+			<a href="mailto:atharvkshirsagar106@gmail.com">
+				<button class="btn">Email Us</button>
+			</a>
+		</div>
+	</header>
+
+	<!-- Page HTML -->
+
+	<div class="box">
+		<img src="Fee Structure.png" alt="Fee Structure" width="800" height="480">
+	</div>
 </body>
+
 </html>

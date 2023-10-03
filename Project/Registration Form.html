@@ -1,8 +1,13 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <title>Registration Form</title>
+  <link rel="stylesheet" href="Registrer-style.css">
   <script>
+    function Redirect() {
+			window.location = 'LoginPage.html';
+		}
     function Display() {
       var str = document.getElementById("MBphone").value;
       var sex = document.querySelector('input[name="gender"]:checked');
@@ -41,81 +46,34 @@
     document.addEventListener('contextmenu', event => event.preventDefault());
   </script>
 </head>
-<style>
-  body {
-    margin: 0;
-    padding: 0;
-    background-image: url(img/sport.jpg);
-    background-size: cover;
-    font-family: Arial, sans-serif;
-  }
-  h1 {
-    text-align: center;
-    padding: 20px 0;
-    color: white;
-  }
-  .register {
-    background: rgba(0, 0, 0, 0.7);
-    width: 500px;
-    margin: 50px auto;
-    color: white;
-    font-size: 18px;
-    padding: 20px;
-    border-radius: 10px;
-  }
-  h2 {
-    text-align: center;
-    padding: 10px;
-    color: white;
-  }
-  label {
-    color: white;
-    font-family: sans-serif;
-    font-size: 18px;
-    font-style: italic;
-  }
-  input[type="text"],
-  input[type="number"],
-  input[type="email"],
-  input[type="password"] {
-    width: 300px;
-    border: none;
-    border-radius: 3px;
-    outline: 0;
-    padding: 5px 10px;
-    margin: 5px 0;
-  }
-  input[type="checkbox"],
-  input[type="radio"] {
-    cursor: pointer;
-  }
-  #ph {
-    width: 65px;
-    padding: 5px 10px;
-    border: none;
-    border-radius: 3px;
-    outline: 0;
-  }
-  #sub {
-    font-family: 'Baloo Bhaina 2', cursive;
-    background-color: black;
-    width: 200px;
-    padding: 10px 14px;
-    margin: 10px 0;
-    font-size: 16px;
-    font-weight: 600;
-    border: none;
-    border-radius: 8px;
-    outline: 0;
-    cursor: pointer;
-    color: white;
-  }
-  #sub:hover {
-    background-color:grey
-    );
-  }
-</style>
+
 <body>
+  <header class="header">
+
+    <div class="left">
+      <img src="img/dumbbell.png" alt="">
+      <div>
+        Intesity Gym
+      </div>
+    </div>
+    <div class="mid">
+      <ul class="navbar">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="./Gallery/Gallery.html">Gallery</a></li>
+        <li><a href="./Services/our services.html">Services</a></li>
+        <li><a href="#" class="active">Registration Form</a></li>
+        <li><a href="Fee Structure.html">Fee Structure</a></li>
+      </ul>
+    </div>
+    <div class="right">
+      <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+      <button class="btn" onclick="Redirect()">Login here</button>
+      <a href="mailto:atharvkshirsagar106@gmail.com">
+        <button class="btn">Email Us</button>
+      </a>
+    </div>
+
+  </header>
   <h1>Registration Form</h1>
   <div class="register">
     <h2>Register Here</h2>
@@ -151,4 +109,5 @@
     </form>
   </div>
 </body>
+
 </html>

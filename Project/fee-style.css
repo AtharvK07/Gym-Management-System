@@ -1,18 +1,30 @@
+/* Page CSS */
+
 body {
-	font-family: Georgia, "Times New Roman", Times, serif, cursive;
-	color: white;
-	margin: 0px;
-	padding: 0px;
-	height: 100vh;
-	background: url("img/weight-lifting-.jpg");
-	background-repeat: no-repeat;
-	background-size: cover;
-	overflow: hidden;
+    margin: 0;
+    padding: 0;
+    background-color: #8e8b8b;
+    /* Background color */
+    font-family: Arial, sans-serif;
 }
 
-* {
-	/* border: 1px solid #e0e0e0; */
+.box {
+    text-align: center;
+    padding: 50px;
+    /* Add more padding for spacing */
 }
+
+.box img {
+    /* max-width: 100%; */
+    /* aspect-ratio: auto; */
+    width: 1700px;
+    height: auto;
+    /* Make sure the image doesn't exceed its container */
+    box-shadow: -10px 10px 100px rgba(227, 223, 223, 0.3);
+    /* Add a subtle shadow */
+}
+
+/* Navbar CSS */
 
 header {
 	border: 1px solid #787474;
@@ -41,8 +53,8 @@ header {
 .left div {
 	position: relative;
 	top: -10px;
+    color: white;
 	font-size: 20px;
-	color: white;
 	font-weight: bolder;
 	text-align: center;
 }
@@ -103,42 +115,4 @@ header {
 button:hover {
 	background-color: rgb(213, 211, 211);
 	color: black;
-}
-
-.container {
-	/* border: 2px solid white; */
-	/* background: rgba(0,0,0,0.5); */
-	margin: 200px 0px 0px 200px;
-	width: 50rem;
-	height: 300px;
-	border-radius: 21px;
-	text-align: center;
-}
-
-.container h1 {
-	text-align: center;
-	font-size: 83px;
-	/* border: 1px solid #bfb7b7; */
-	margin: 0px;
-}
-
-.container h2 {
-	text-align: center;
-	font-size: 19px;
-	/* border: 1px solid #ada8a8; */
-	margin: 0;
-}
-
-.container h4 {
-	text-align: center;
-	font-size: 28px;
-	margin: 0;
-}
-
-.register {
-	margin-top: 50px;
-	padding: 10px 20px;
-	font-size: 30px;
-	width: 300px;
-	background: #3d3d3d;
 }
