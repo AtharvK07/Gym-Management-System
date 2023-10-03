@@ -1,0 +1,182 @@
+/* Navbar CSS */
+
+header {
+    border: 1px solid #787474;
+    background-color: rgba(0, 0, 0, 0.6);
+    background-blend-mode: darken;
+    display: flex;
+    justify-content: space-between;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+    /*border: 2px solid red;*/
+}
+
+.left:hover {
+    cursor: pointer;
+}
+
+.left img {
+    width: 120px;
+    filter: invert(100%);
+}
+
+.left div {
+    position: relative;
+    top: -10px;
+    font-size: 20px;
+    color: white;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.mid {
+    align-self: center;
+    /* border: 2px solid green; */
+}
+
+.right {
+    align-self: center;
+    /*border: 2px solid yellow;*/
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    /* border: 1px solid #e5e2e2; */
+}
+
+.navbar li {
+    /* border: 1px solid #e5e2e2; */
+    /* display: inline-block; */
+    align-self: center;
+    text-align: center;
+    list-style: none;
+    font-size: 23px;
+}
+
+.navbar li a {
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px 50px;
+}
+
+.navbar li a:hover,
+.navbar li a.active {
+    /* text-decoration: underline; */
+    color: gray;
+}
+
+.btn {
+    /*border: 2px solid gray;*/
+    border: none;
+    background-color: rgb(30, 30, 30);
+    color: white;
+    cursor: pointer;
+    border-radius: 8px;
+    font-family: "Baloo Bhaina 2", cursive;
+    font-size: 20px;
+    /* margin: 20px auto; */
+    /* margin: 0px 9px; */
+    /* padding: 4px 14px; */
+    width: 120px;
+}
+
+button:hover {
+    background-color: rgb(213, 211, 211);
+    color: black;
+}
+
+/* Registration Page CSS */
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(img/sport.jpg);
+    background-size: cover;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    padding: 30px 0;
+    color: white;
+}
+
+.register {
+    background: rgba(0, 0, 0, 0.7);
+    width: 700px;
+    height: 800px;
+    margin: 50px auto;
+    color: white;
+    font-size: 23px;
+    padding: 100px;
+    padding-top: 50px;
+    border-radius: 10px;
+    /* transform: scale(1.4); */
+}
+
+h2 {
+    text-align: center;
+    padding-bottom: 50px;
+    color: white;
+}
+
+label {
+    color: white;
+    font-family: sans-serif;
+    font-size: 25px;
+    font-style: italic;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="email"],
+input[type="password"] {
+    width: 300px;
+    border: none;
+    border-radius: 3px;
+    outline: 0;
+    height: 25px;
+    font-size: 20px;
+    padding: 5px 10px;
+    margin: 5px 0;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    cursor: pointer;
+}
+
+#ph {
+    width: 70px;
+    padding: 5px 10px;
+    border: none;
+    height: 30px;
+    border-radius: 3px;
+    outline: 0;
+}
+
+#sub {
+    font-family: 'Baloo Bhaina 2', cursive;
+    background-color: rgb(47, 46, 46);
+    width: 200px;
+    padding: 10px 14px;
+    margin: 10px 0;
+    font-size: 18px;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    outline: 0;
+    cursor: pointer;
+    color: white;
+}
+
+#sub:hover {
+    background-color: rgb(197, 193, 193);
+    color: black;
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Gallary</title>
+	<script>
+		document.addEventListener('contextmenu', event => event.preventDefault()); 
+		function Redirect() {
+			window.location = '../LoginPage.html';
+		}
+	</script>
+	<link rel="stylesheet" type="text/css" href="gallery.css">
+</head>
+
+<body>
+	<header class="header">
+
+		<div class="left">
+			<img src="../img/dumbbell.png" alt="">
+			<div>
+				Intesity Gym
+			</div>
+		</div>
+		<div class="mid">
+			<ul class="navbar">
+				<li><a href="../home.html" >Home</a></li>
+				<li><a href="#" class="active">Gallery</a></li>
+				<li><a href="../Services/our services.html">Services</a></li>
+				<li><a href="../Registration Form.html">Registration Form</a></li>
+				<li><a href="../Fee Structure.html">Fee Structure</a></li>
+			</ul>
+		</div>
+		<div class="right">
+			<script src="https://apps.elfsight.com/p/platform.js" defer></script>
+			<button class="btn" onclick="Redirect()" >Login here</button>
+			<a href="mailto:atharvkshirsagar106@gmail.com">
+				<button class="btn">Email Us</button>
+			</a>
+		</div>
+
+	</header>
+	<div class="container">
+		<h1>Photo Gallery</h1>
+	</div>
+	<main>
+		
+		<div class="box">
+			<div class="gallary">
+				<img src="./img/img1.jpg">
+			</div>
+			<div class="gallary">
+				<img src="./img/img2.jpg">
+			</div>
+			<div class="gallary">
+				<img src="./img/img3.jpg">
+			</div>
+			<div class="gallary">
+				<img src="./img/img5.jpg">
+			</div>
+			<div class="gallary">
+				<img src="./img/img4.jpg">
+			</div>
+			<div class="gallary">
+				<img src="./img/img6.jpg">
+			</div>
+			<div class="gallary">
+				<img src="./img/img7.jpg">
+			</div>
+			<div class="gallary">
+				<img src="./img/img8.jpg">
+			</div>
+
+	</main>
+</body>
+
+</html>

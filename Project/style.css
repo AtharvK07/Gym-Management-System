@@ -1,0 +1,144 @@
+body {
+	font-family: Georgia, "Times New Roman", Times, serif, cursive;
+	color: white;
+	margin: 0px;
+	padding: 0px;
+	height: 100vh;
+	background: url("img/weight-lifting-.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	overflow: hidden;
+}
+
+* {
+	/* border: 1px solid #e0e0e0; */
+}
+
+header {
+	border: 1px solid #787474;
+	background-color: rgba(0,0,0,0.6);
+	background-blend-mode: darken;
+	display: flex;
+	justify-content: space-between;
+}
+
+.left {
+	display: flex;
+	flex-direction: column;
+	margin-left: 30px;
+	/*border: 2px solid red;*/
+}
+
+.left:hover {
+	cursor: pointer;
+}
+
+.left img {
+	width: 120px;
+	filter: invert(100%);
+}
+
+.left div {
+	position: relative;
+	top: -10px;
+	font-size: 20px;
+	color: white;
+	font-weight: bolder;
+	text-align: center;
+}
+
+.mid {
+	align-self: center;
+	/* border: 2px solid green; */
+}
+
+.right {
+	align-self: center;
+	/*border: 2px solid yellow;*/
+}
+
+.navbar {
+	display: flex;
+	justify-content: center;
+	/* border: 1px solid #e5e2e2; */
+}
+
+.navbar li {
+	/* border: 1px solid #e5e2e2; */
+	/* display: inline-block; */
+	align-self: center;
+	text-align: center;
+	list-style: none;
+	font-size: 23px;
+}
+
+.navbar li a {
+	color: white;
+	text-decoration: none;
+	text-align: center;
+	padding: 10px 50px;
+}
+
+.navbar li a:hover,
+.navbar li a.active {
+	/* text-decoration: underline; */
+	color: gray;
+}
+
+.btn {
+	/*border: 2px solid gray;*/
+	border: none;
+	background-color: rgb(30, 30, 30);
+	color: white;
+	cursor: pointer;
+	border-radius: 8px;
+	font-family: "Baloo Bhaina 2", cursive;
+	font-size: 20px;
+	/* margin: 20px auto; */
+	/* margin: 0px 9px; */
+	/* padding: 4px 14px; */
+	width: 120px;
+}
+
+button:hover {
+	background-color: rgb(213, 211, 211);
+	color: black;
+}
+
+.container {
+	/* border: 2px solid white; */
+	/* background: rgba(0,0,0,0.5); */
+	margin: 200px 0px 0px 200px;
+	width: 50rem;
+	height: 300px;
+	border-radius: 21px;
+	text-align: center;
+}
+
+.container h1 {
+	text-align: center;
+	font-size: 83px;
+	/* border: 1px solid #bfb7b7; */
+	margin: 0px;
+}
+
+.container h2 {
+	text-align: center;
+	font-size: 19px;
+	/* border: 1px solid #ada8a8; */
+	margin: 0;
+}
+
+.container h4 {
+	text-align: center;
+	font-size: 28px;
+	margin: 0;
+}
+
+.register {
+	margin-top: 50px;
+	padding: 10px 20px;
+	font-size: 30px;
+	width: 300px;
+	background: #3d3d3d;
+}

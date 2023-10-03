@@ -1,111 +1,76 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Intensity Gym Member's Login</title>
+	<!-- Add Bootstrap CSS link -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+
+<body class="bg-secondary">
+	<div class="container mt-5">
+		<div class="row justify-content-center">
+			<div class="col-md-6">
+				<div class="card">
+					<div class="card-header bg-dark text-white text-center">
+						<h2 class="mb-0">Gym Member's Login</h2>
+					</div>
+					<div class="card-body">
+						<form>
+							<div class="form-group">
+								<input type="text" class="form-control" id="fname" placeholder="Enter your Name">
+							</div>
+							<div class="form-group">
+								<div class="input-group">
+									<input type="password" class="form-control" id="tf2"
+										placeholder="Enter your Password">
+									<div class="input-group-append">
+										<span class="input-group-text">
+											<input type="checkbox" onclick="myFunction()"> Show Password
+										</span>
+									</div>
+								</div>
+							</div>
+							<button type="button" class="btn btn-dark btn-block" onclick="Display()">Login</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Add Bootstrap JS and Popper.js links (required for Bootstrap functionality) -->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
 	<script>
-		function Display()
-		{
-			
-			var v=document.getElementById("fname").value;
+		function Display() {
+			var v = document.getElementById("fname").value;
 			var x = document.getElementById("tf2").value;
-			if(!v || !x)
-			{
+			if (!v || !x) {
 				alert("Please Enter Value!!!");
-			}
-			else if(v || x)
-			{
-				alert("Welcome "+v+" to the Intensity Gym!! The body achieves what the mind believes");
+			} else if (v || x) {
+				alert("Welcome " + v + " to the Intensity Gym!!");
+				Redirect();
 			}
 		}
-		function Redirect()
-		{
-			window.location="our services.html";
+
+		function Redirect() {
+			window.location = "home.html";
 		}
-		function myFunction() 
-		{
+
+		function myFunction() {
 			var x = document.getElementById("tf2");
-			if (x.type === "password") 
-			{
-					x.type = "text";
-			} 
-			else 
-			{
+			if (x.type === "password") {
+				x.type = "text";
+			} else {
 				x.type = "password";
 			}
 		}
-
-		<div class="dropdown">
-  <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-    Dropdown button
-  </button>
-  <ul class="dropdown-menu">
-    <li><a class="dropdown-item" href="#">Action</a></li>
-    <li><a class="dropdown-item" href="#">Another action</a></li>
-    <li><a class="dropdown-item" href="#">Something else here</a></li>
-  </ul>
-</div>
 	</script>
-<style>
-.main{
-	background: url('img/fitness.jpg');
-}
-h2{
-    font-size: 36px;
-    text-align: center;
-    width: 596px;
-    margin: 28px -169px;
-    padding: 15px 69px;
-    background-color: #d5b538;
-    color: #040404;
-}
-.form-group input{
-	font-family: monospace;
-    display: -webkit-inline-box;
-    width: 296px;
-    padding: 4px;
-    /* border: 7px solid black; */
-    margin: 10px auto;
-    font-size: 15px;
-    border-radius: 8px;
-}
-.btn{
-	font-family: cursive;
-    margin: 14px 80px;
-    color: white;
-    background-color: black;
-    padding: 8px 61px;
-    /* border: 2px solid gray; */
-    border-radius: 8px;
-    cursor: pointer;
-}
-.btn:hover{
-   background-color: #D5B538;
-  font-weight: bold;
-}
-.mid{
-	display: block;
-    width: 33%;
-    margin: 75px 469px;
-    /* border: 2px solid green;
-}
-</style>
-</head>
-<body class="main">
-	<div class="mid">
-		<h2>Gym Member's Login</h2>
-		<form>
-		<div class="form-group">
-				<input type="text" id="fname" value="" placeholder="Enter your Name">
-		</div>
-		<div class="form-group">
-				<input type="password" value="" id="tf2" placeholder="Enter your Password"><br><br>
-		</div>
-		<div class="chck" style="font-family: -webkit-pictograph;font-size: 14px;margin: -15px 10px;padding: 9px 0px;">
-		Show Password<input type="checkbox" onclick="myFunction()">
-		</div>
-		<button class="btn" onclick="Display();Redirect">Login</button>
-
-
-			
-		</form>
-	</div>
 </body>
+
 </html>
