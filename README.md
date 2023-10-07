@@ -4,7 +4,8 @@
 2. [Features](#Features)
 3. [Contributors](#Contributors)
 <br>
-<a name="intro"></a>  
+<a name="intro"></a>
+
 ## Introduction
 The Gym Management System is a software application designed to help gym owners and managers efficiently manage their gym operations. This README file provides an overview of the system, its features, and instructions on how to set it up and use it.
 
@@ -57,5 +58,5 @@ The Gym Management System offers the following features:
 <a href="https://github.com/AtharvK07/Gym-Management-System/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=AtharvK07/Gym-Management-System" />
 </a>
-<br>
+
 #### Make sure to⭐ this repository if you found it helpful!
